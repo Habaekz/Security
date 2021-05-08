@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="src/css/style.css">
+
+    <title>About Our Project</title>
+    <meta name="Description" content="Encrypt and decrypt files securely in your browser using the AES 256 algorithm.">
+    <meta name="Keywords"
+        content="encrypt decrypt encryption file-encryption javascript client-side serverless decryption aes aes-encryption aes-256 aes-128 encryption-decryption webcrypto webcryptoapi crypto browser in-browser">
+
+</head>
+
+<body>
+
+    <ul class="nav justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link disabled" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="about.html">About Us</a>
+        </li>
+    </ul>
+
+
+    <div class="jumbotron jumbotron-fluid bg-light">
+        <div class="container">
+            <h2 class="display-4 title">About <a href="index.html">Secured Image Browser</a></h2>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="col-sm-12">
+            
+            <p class="lead">
+                Develop an image browser embedded with encryption / decryption functions. The encryption and decryption function must be performed automatically once  having or opening an image file. The browser is required to support image raw file format, e.g., *.bmp.
+                <br><br>
+                Our group use a Javascript app that provides secure file encryption using the <a
+                    href="https://www.w3.org/TR/WebCryptoAPI/#aes-gcm">AES-256-GCM</a> algorithm from the <a href="https://www.w3.org/TR/WebCryptoAPI/#aes-gcm">WebCryptoAPI</a> included in your browser.
+            </p>
+        </div>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid bg-light">
+        <div class="container">
+            <h2 class="display-4 title">How does it work?</h2>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="col-sm-12">
+            <div class="card-group">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Password</h5>
+                        <p class="card-text">An encryption key is derived from the
+                            given password
+                            using the PBKDF2-SHA512 algorithm.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Key Derivation</h5>
+                        <p class="card-text">PBKDF2 uses a random 128-bit salt and 80,000 iterations
+                            to generate a unique 256-bit encryption key.<br><small
+                                class="text-muted">(pjRxtpw3j3IQV2wsTzuj7QlThozYCKlIc28PX..)</small></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Encryption</h5>
+                        <p class="card-text">The file is read into memory and encrypted using AES-GCM with the generated key and a 128-bit random nonce.</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="footer">
+        <nav class="navbar  navbar-light bg-light">
+            <ul class="nav navbar-nav mx-auto">
+                <li class="nav-item">
+                    Secure Image Browser @Habaek 
+                </li>
+            </ul>
+        </nav>
+    </div>
+</body>
+
+</html>
